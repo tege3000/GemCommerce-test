@@ -8,6 +8,18 @@ body {
   background-color: #fff;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.main {
+  padding: 40px 0;
+}
+
+
 /* Headings: h1–h3 */
 h1, h2, h3 {
   margin: 0 0 10px;
@@ -35,8 +47,8 @@ section {
 .top-section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
 }
 
 /* === Feature Icons and Text === */
@@ -89,7 +101,11 @@ section {
   margin: 0 5px;
 }
 
-.container.double-column {
+.section {
+  margin-bottom: 60px;
+}
+
+.section.double-column {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -97,22 +113,17 @@ section {
   justify-content: space-between;
 }
 
-/* Reverse layout for alternating image/text */
-.container.double-column.reverse {
-  flex-direction: row-reverse;
-}
-
-.container .text {
+.section .text {
   flex: 1;
   min-width: 300px;
 }
 
-.container .text h2 {
+.section .text h2 {
   font-size: 1.5rem;
 }
 
 /* Stats list */
-.container .text ul {
+.section .text ul {
   list-style: none;
   padding: 0;
   margin: 20px 0;
@@ -127,12 +138,12 @@ section {
   vertical-align: middle;
 }
 
-.container .text li {
+.section .text li {
   margin-bottom: 10px;
 }
 
 /* Section buttons */
-.container .text button {
+.section .text button {
   background-color: #f2613f;
   color: white;
   padding: 10px 20px;
@@ -143,13 +154,32 @@ section {
 }
 
 /* Image column */
-.container .image {
+.section .image {
   flex: 1;
   text-align: center;
 }
 
-.container .image img {
+.section .image.right {
+  flex: 1;
+  text-align: justify;
+  text-align-last: right;
+}
+
+.section .image.left {
+  flex: 1;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.section .image img {
   width: 100%;
   max-width: 400px;
   border-radius: 10px;
 }
+
+
+
+
+
+
+
