@@ -14,5 +14,9 @@ A clean, responsive landing page built with HTML and CSS for a premium dog food 
 
 --- 
 ## Live Demo
-- Visit the live site for this code repo here: [Healthy Dog Food Site](https://tege3000.github.io/GemCommerce-test/)
+- Visit the live site for this code repo here: [Healthy Dog Food Site](https://gemcommercetest.netlify.app)
 
+## Author
+- Submitted by Tito Michael Egeonu
+- You can reach me at: 09079071492
+- Email: teetoegeonu@gmail.com

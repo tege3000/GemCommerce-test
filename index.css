@@ -19,9 +19,9 @@ body {
 }
 
 
-/* Headings: h1–h3 */
 h1, h2, h3 {
   margin: 0 0 10px;
+  font-weight: 700;
 }
 
 /* === Main Hero Section === */
@@ -59,7 +59,6 @@ section {
   padding: 10px;
 }
 
-/* Each feature item (icon + text block) */
 .feature {
   margin-bottom: 20px;
 }
@@ -94,7 +93,6 @@ section {
   cursor: pointer;
 }
 
-/* Guarantee text */
 .cta .guarantee {
   margin: 10px 0;
   font-size: 0.9rem;
@@ -137,7 +135,6 @@ section {
   font-size: 1.5rem;
 }
 
-/* Stats list */
 .section .text ul {
   list-style: none;
   padding: 0;
@@ -152,11 +149,13 @@ section {
   display: inline-block;
   vertical-align: middle;
   min-width: 60px;
+  padding-right: 20px;
 }
 
 .section .text li {
   margin-bottom: 10px;
   line-height: 1.5;
+  display: flex;
 }
 
 /* Section buttons */
