@@ -12,7 +12,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .main {
@@ -41,11 +40,13 @@ section {
 
 .main h1 span {
   font-weight: normal;
+  display: block;
 }
 
 /* Top feature area (icons + image) */
 .top-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 30px;
@@ -64,12 +65,16 @@ section {
 }
 
 .center-image {
-  flex: 0 0 240px;
-  text-align: center;
+  flex: 1;
+  min-width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .center-image img {
-  width: 240px;
+  width: 100%;
+  max-width: 240px;
   border-radius: 50%;
 }
 
@@ -95,6 +100,13 @@ section {
   font-size: 0.9rem;
 }
 
+.cta .payments {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 /* Payment method icons */
 .cta .payments img {
   width: 40px;
@@ -111,6 +123,9 @@ section {
   gap: 20px;
   align-items: center;
   justify-content: space-between;
+  padding: 40px 20px;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .section .text {
@@ -136,49 +151,115 @@ section {
   margin-right: 12px;
   display: inline-block;
   vertical-align: middle;
+  min-width: 60px;
 }
 
 .section .text li {
   margin-bottom: 10px;
+  line-height: 1.5;
 }
 
 /* Section buttons */
 .section .text button {
   background-color: #f2613f;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 6px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
 /* Image column */
 .section .image {
   flex: 1;
-  text-align: center;
+  min-width: 300px;
 }
 
 .section .image.right {
-  flex: 1;
   text-align: justify;
   text-align-last: right;
 }
 
 .section .image.left {
-  flex: 1;
   text-align: justify;
   text-align-last: left;
 }
 
 .section .image img {
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   border-radius: 10px;
+  height: auto;
+}
+
+/* === Responsive Breakpoints === */
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features, .center-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .center-image img {
+    max-width: 200px;
+  }
+
+  .main h1 {
+    font-size: 1.5rem;
+  }
+
+  .cta button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main h1 {
+    font-size: 1.3rem;
+  }
+
+  .center-image img {
+    max-width: 180px;
+  }
+
+  .cta .payments img {
+    width: 30px;
+  }
 }
 
 
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 15px;
+  }
 
+  .double-column .text,
+  .double-column .image {
+    width: 100%;
+  }
+
+  .section ul {
+    text-align: left;
+  }
+
+  .stat-number {
+    display: inline;
+    font-size: 1.6rem;
+  }
+
+  .section h1, .section h2 {
+    font-size: 1.5rem;
+  }
+}
 
 
 
