@@ -1,0 +1,155 @@
+/* === Base Styles === */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+/* Headings: h1–h3 */
+h1, h2, h3 {
+  margin: 0 0 10px;
+}
+
+/* === Main Hero Section === */
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Tagline */
+.main h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.main h1 span {
+  font-weight: normal;
+}
+
+/* Top feature area (icons + image) */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* === Feature Icons and Text === */
+.features {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+}
+
+/* Each feature item (icon + text block) */
+.feature {
+  margin-bottom: 20px;
+}
+
+.center-image {
+  flex: 0 0 240px;
+  text-align: center;
+}
+
+.center-image img {
+  width: 240px;
+  border-radius: 50%;
+}
+
+/* === Call to Action (CTA) Styles === */
+.cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cta button {
+  background-color: #f2613f;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Guarantee text */
+.cta .guarantee {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+/* Payment method icons */
+.cta .payments img {
+  width: 40px;
+  margin: 0 5px;
+}
+
+.container.double-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Reverse layout for alternating image/text */
+.container.double-column.reverse {
+  flex-direction: row-reverse;
+}
+
+.container .text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.container .text h2 {
+  font-size: 1.5rem;
+}
+
+/* Stats list */
+.container .text ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #f2613f;
+  margin-right: 12px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container .text li {
+  margin-bottom: 10px;
+}
+
+/* Section buttons */
+.container .text button {
+  background-color: #f2613f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Image column */
+.container .image {
+  flex: 1;
+  text-align: center;
+}
+
+.container .image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
