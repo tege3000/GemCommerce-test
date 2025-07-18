@@ -1,6 +1,6 @@
 # Healthy Dog Food Landing Page
 
-A clean, responsive landing page built with HTML and CSS for a premium dog food brand. It highlights real ingredients, health benefits, and vet-developed quality — with images, icons, and strong call-to-action sections.
+A clean, responsive landing page built with HTML and CSS for a premium dog food brand. Built in response to GemCommerce's Technical Test
 
 ---
 
